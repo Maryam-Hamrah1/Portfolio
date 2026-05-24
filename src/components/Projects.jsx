@@ -69,7 +69,7 @@ function Projects() {
                     key={index}
                     className="flex gap-5 w-auto h-auto p-2  rounded-2xl  overflow-hidden shadow-xl bg-[#FAF3E0]"
                     >
-                    <img src={project.image} alt={project.name} className='w-auto h-auto rounded-2xl object-cover'/>
+                    <img src={project.image} alt={project.name} className='w-800 h-100 rounded-2xl object-cover'/>
                     <div>
                         
                         <h2 className='text-2xl font-bold mb-4 text-[#3A2F1F] text-left'>{project.name}</h2>
