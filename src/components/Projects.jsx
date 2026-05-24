@@ -59,17 +59,17 @@ function Projects() {
     <section className=' max-w-full  min-h-screen py-20 px-10 bg-[#E6D5B8] ' >
         <h1 className='  ml-22 text-left gap-8 text-[#3A2F1F] font-bold text-3xl mb-5' >My Projects</h1>
 
-        <div className='flex flex-col md:flex-row  gap-10  items-center justify-center gap-8 '>
+        <div className='flex flex-col md:flex-row    gap-8 '>
             
-            <button onClick={previousProject} className= ' text-[#3A2F1F] font-bold'>Back ← </button>
+            <button onClick={previousProject} className= 'text-left md:text-center text-[#3A2F1F] font-bold'>Back ← </button>
             {projects 
             .filter((_, index) => index === current)
             .map((project, index) =>(
                 <div
                     key={index}
-                    className="flex gap-5 w-auto h-auto p-2  rounded-2xl  overflow-hidden shadow-xl bg-[#FAF3E0]"
+                    className="flex flex-col md:flex-row gap-5 w-auto h-auto p-2  rounded-2xl  overflow-hidden shadow-xl bg-[#FAF3E0]"
                     >
-                    <img src={project.image} alt={project.name} className='w-auto h-auto rounded-2xl object-cover'/>
+                    <img src={project.image} alt={project.name} className='w-auto h-auto md:h-[400px] rounded-2xl object-cover'/>
                     <div>
                         
                         <h2 className='text-2xl font-bold mb-4 text-[#3A2F1F] text-left'>{project.name}</h2>
@@ -92,7 +92,7 @@ function Projects() {
                 </div>
             ))}
 
-            <button onClick={nextProject} className= ' text-[#3A2F1F] font-bold'>Next →</button>
+            <button onClick={nextProject} className= 'text-right md:text-center text-[#3A2F1F] font-bold'>Next →</button>
             
             
         </div>

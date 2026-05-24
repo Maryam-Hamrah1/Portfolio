@@ -4,7 +4,7 @@ function About() {
   const [showMore, setShowMore] = useState(false)
 
   return (
-    <section className='w-full min-h-screen snap-start bg-[#FAF3E0] pt-16 md:pt-20 px-4 md:px-10'>
+    <section className='w-full min-h-screen snap-start bg-[#FAF3E0] pb-10 pt-16 md:pt-20 px-4 md:px-10'>
 
       {/* Top Card */}
       <div className='w-full bg-[#E6D5B8] rounded-3xl p-5 md:p-10'>
