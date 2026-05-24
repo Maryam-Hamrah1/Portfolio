@@ -72,7 +72,7 @@ function Projects() {
 
                     <img src={project.image} alt={project.name} className='w-auto h-auto md:h-[400px] rounded-2xl object-cover'/>
 
-                    <img src={project.image} alt={project.name} className='w-800 h-100 rounded-2xl object-cover'/>
+                    
 
                     <div>
                         
